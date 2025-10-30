@@ -1,5 +1,5 @@
 import { MissionUtils } from "@woowacourse/mission-utils";
-import createError from "./createError";
+import createError from "./createError.js";
 
 export async function printLines(lines) {
   for (const line of lines) {

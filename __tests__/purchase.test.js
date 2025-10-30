@@ -1,4 +1,8 @@
-import { isNonZero, isPerThousand, isPositive } from "../src/module/purchase";
+import {
+  isNonZero,
+  isPerThousand,
+  isPositive,
+} from "../src/module/purchase.js";
 
 describe("로또 구입금액 단위모듈 테스트", () => {
   test("1000원 단위 검증", () => {

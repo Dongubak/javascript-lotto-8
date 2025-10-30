@@ -1,5 +1,5 @@
-import { isNotDuplicateWithArray } from "../src/module/bonus";
-import { isNumber, isRightRange } from "../src/module/common";
+import { isNotDuplicateWithArray } from "../src/module/bonus.js";
+import { isNumber, isRightRange } from "../src/module/common.js";
 
 describe("answer 단위 테스트", () => {
   test("보너스 숫자가 숫자인가", () => {

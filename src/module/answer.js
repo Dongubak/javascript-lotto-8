@@ -1,4 +1,4 @@
-import { isNumber, isRightRange } from "./common";
+import { isNumber, isRightRange } from "./common.js";
 
 export const CANNOT_BE_NON_SIX = "Elements' length must be 6";
 export const CANNOT_BE_SOME_NON_NUMERIC = "Elements' must be numeric";

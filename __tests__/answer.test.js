@@ -4,7 +4,7 @@ import {
   isElementNSix,
   isNotDuplicate,
   splitForComma,
-} from "../src/module/answer";
+} from "../src/module/answer.js";
 
 describe("answer 단위 테스트", () => {
   test(", 으로 나눔", () => {

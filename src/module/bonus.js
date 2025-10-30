@@ -1,4 +1,4 @@
-import { isNumber, isRightRange } from "./common";
+import { isNumber, isRightRange } from "./common.js";
 
 export const CANNOT_BE_SOME_DUPLICATED_WITH_ARRAY =
   "This must be unique for lotto array";

@@ -1,6 +1,6 @@
 import { MissionUtils } from "@woowacourse/mission-utils";
-import Lotto from "./Lotto";
-import getRandomLottoNumbers from "../module/getRandomLottoNumbers";
+import Lotto from "./Lotto.js";
+import getRandomLottoNumbers from "../module/getRandomLottoNumbers.js";
 
 class Lottos {
   #lottos;
@@ -21,6 +21,13 @@ class Lottos {
       purchase: this.#purchase,
       lottos: this.#lottos.map((lotto) => lotto.getLotto()),
     };
+  }
+
+  getResults(bonusNumber, correctLotto) {
+    return this.#lottos.map((lotto) => ({
+      match: lotto.countMatches(correctLotto),
+      bonus: lotto.hasBonus(bonusNumber),
+    }));
   }
 }
 

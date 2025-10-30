@@ -1,6 +1,6 @@
 import { MissionUtils } from "@woowacourse/mission-utils";
-import { print, printLines, readLine } from "../src/module/inputOutput";
-import ConsoleView from "../src/view/ConsoleView";
+import { print, printLines, readLine } from "../src/module/inputOutput.js";
+import ConsoleView from "../src/view/ConsoleView.js";
 import {
   CANNOT_BE_NON_NUMERIC,
   CANNOT_BE_NOT_SOME_RIGHT_RANGE,
