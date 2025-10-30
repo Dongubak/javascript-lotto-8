@@ -1,5 +1,11 @@
 import { isNumber, isRightRange } from "./common";
 
+export const CANNOT_BE_NON_SIX = "Elements' length must be 6";
+export const CANNOT_BE_SOME_NON_NUMERIC = "Elements' must be numeric";
+export const CANNOT_BE_SOME_INCORRECT_RANGE = "Elements' must be correct range";
+export const CANNOT_BE_DUPLICATED =
+  "Elements' must not be duplicated each other";
+
 export function splitForComma(arrayLikeString) {
   const splittedArray = arrayLikeString.split(",");
   return splittedArray;
