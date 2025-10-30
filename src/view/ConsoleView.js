@@ -19,7 +19,7 @@ import {
   isNumberWithTrim,
   isRightRange,
 } from "../module/common";
-import { promptUntilValid } from "../module/inputOutput";
+import { print, printLines, promptUntilValid } from "../module/inputOutput";
 import {
   CANNOT_DIVIDED_THOUSAND,
   CANNOT_INPUT_NEGATIVE,
@@ -73,6 +73,11 @@ class ConsoleView {
       if (!isNotDuplicateWithArray(raw, correctLottoNumbers))
         throw new Error(CANNOT_BE_SOME_DUPLICATED_WITH_ARRAY);
     });
+  }
+
+  async printPurchasedLotto(lottos) {
+    await print(`${lottos.count}개를 구매했습니다.`);
+    await printLines(lottos.lottos.map((lotto) => `[${lotto.join(", ")}]`));
   }
 }
 

@@ -1,3 +1,4 @@
+import Lottos from "../model/Lottos";
 import ConsoleView from "../view/ConsoleView";
 
 class LottoController {
@@ -10,13 +11,13 @@ class LottoController {
     const lottos = new Lottos(purchase);
     await this.view.printPurchasedLotto(lottos.getLottos());
 
-    const correctLotto = await this.view.getCorrectLottoNumber();
-    const bonusNumber = await this.view.getBonusNumber();
+    // const correctLotto = await this.view.getCorrectLottoNumber();
+    // const bonusNumber = await this.view.getBonusNumber();
 
-    const stats = new Stats(
-      lottos.getResult(bonusNumber, correctLotto.getLotto())
-    );
-    await this.view.printStat(stats);
+    // const stats = new Stats(
+    //   lottos.getResult(bonusNumber, correctLotto.getLotto())
+    // );
+    // await this.view.printStat(stats);
   }
 }
 
